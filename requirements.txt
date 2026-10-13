@@ -1,0 +1,4 @@
+# 第一次在实验机跑通后，把版本写死。
+torch
+pillow
+# torchvision  # 有它时，src/env_check.py 才会尝试 CIFAR-10

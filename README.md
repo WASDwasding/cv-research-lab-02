@@ -1,25 +1,21 @@
 # cv-research-lab-02
 
-计算机视觉实验。先服务于另一个项目里的一个功能；问题、数据和对照站得住之后，再按正规流程写成论文。
+用图像评估实体书的新旧程度。结果要能接到另一个项目里；能写成论文时按实验记录来写。
 
-课题还没锁定。论文要交什么见 `PLAN.md`，做到哪一步见 `STATUS.md`。目录沿用 [cv-research-lab-01](https://github.com/WASDwasding/cv-research-lab-01) 的记录方式，不沿用那一题的对象和数字。
+已定的范围：看使用品相，输入是多张固定角度的照片，输出是档，再结合原价等估价，实体书不限种类。档的名称和价格公式还没定，见 `docs/notes/open-questions.md`。文献在 `docs/notes/`，四种尚未选定的做法在 `docs/notes/methods.md`。
 
 ## 目录
 
 ```
-PLAN.md            论文清单（课题锁定前是空表）
-STATUS.md          当前进度
-docs/              方向、投稿、实验设计
-mentor_logs/       组会记录
-experiments/       实验记录（硬件、命令、指标）
-results/           数字与表
-src/               训练与评测代码
-data/              数据集（不进 git）
-notes/papers/      读论文笔记
+docs/notes/     别人的论文、数据集、品相口径
+docs/paper/     论文壳。任务锁定前只有节标题
+experiments/    以后的实验记录
+results/        以后的表和图
+src/            env_check.py 检查训练；estimate.py 给另一个项目调用，模型和公式未定时空着返回
+data/           图像不进 git
+STATUS.md       做到哪一步
 ```
 
-## 现在不做
+训练在 4060 游戏本上跑，MacBook 用来在外写代码和文档。分工见 `experiments/README.md`。
 
-- 不把上一题的屏幕损伤分级、SSGD 或已有分数写进本仓库
-- 不在方向锁定前选模型、下大数据或投稿
-- 不把环境检查的冒烟数字写进论文主表
+环境检查：在仓库根目录运行 `python src/env_check.py`。它只证明训练循环能结束，不读书籍图像。主实验不在 MacBook 上跑。

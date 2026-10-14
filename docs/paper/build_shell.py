@@ -1,9 +1,9 @@
 """把论文壳打成 PDF。不依赖 LaTeX。
 
 用法（在仓库根目录）:
-    python paper/build_shell.py
+    python docs/paper/build_shell.py
 输出:
-    paper/shell.pdf
+    docs/paper/shell.pdf
 """
 
 from __future__ import annotations
@@ -31,15 +31,15 @@ BLOCKS = [
     ("head", "摘要 / Abstract"),
     ("body", "这一页只建壳。摘要以后写任务定义、对照结果、以及模型在哪里失效。本页不填任何实验数字。"),
     ("head", "1 引言 / Introduction"),
-    ("body", "任务还没锁定。锁定后写输入、输出，以及明确不做的事。贡献主张见 paper/contributions.md。"),
+    ("body", "任务还没锁定。锁定后写输入、输出，以及明确不做的事。贡献主张见 docs/paper/contributions.md。"),
     ("head", "2 相关工作 / Related Work"),
-    ("body", "待写。笔记放在 notes/papers/。别人论文里的数字不进主表。"),
+    ("body", "待写。笔记放在 docs/notes/。别人论文里的数字不进主表。"),
     ("head", "3 方法 / Method"),
-    ("body", "待 experiments/label_protocol.md 把任务定义写死后再写。"),
+    ("body", "待 experiments/ 里写下任务定义后再写。"),
     ("head", "4 实验 / Experiments"),
     ("body", "还没有运行。主表的每一行以后要对上命令、种子、机器和 results/ 里的 CSV。"),
     ("head", "5 结论 / Conclusion"),
-    ("body", "数字冻结后再写局限。局限重复方向文件里点名的失败条件。"),
+    ("body", "数字冻结后再写局限。局限重复任务锁定时点名的失败条件。"),
 ]
 
 

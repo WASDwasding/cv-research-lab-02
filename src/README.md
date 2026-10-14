@@ -1,15 +1,7 @@
 # 代码
 
-训练与评测脚本放这里。现在只有环境检查。方向锁定、标签规则写死之前，不要堆模型文件。
+`env_check.py` 做最小分类训练，用来确认这台机器能跑完。它不读书籍照片，也不输出新旧程度。
 
-建议以后：
+依赖：`torch`。装了 `torchvision` 时会尝试 CIFAR-10，否则用合成图。论文壳 `docs/paper/build_shell.py` 另需 `pillow`。
 
-```
-src/
-  data/      划分与 Dataset
-  models/    骨干与任务头
-  train.py
-  eval.py
-```
-
-依赖写在仓库根目录的 `requirements.txt`。随机种子写进命令行。
+`estimate.py` 是给另一个项目调用的入口：多张书影加原价，返回档、缺陷和估价。模型和价格公式还没定，这三个字段现在是空的，调用方式和以后替换模型时保持一样。做法见 `docs/notes/methods.md`。

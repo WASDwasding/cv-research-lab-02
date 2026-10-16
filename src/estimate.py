@@ -5,8 +5,8 @@
         --front cover.jpg --back back.jpg --spine spine.jpg \\
         --image page.jpg
 
-档位名称、价格公式和必拍角度都还没定，见 docs/notes/open-questions.md。
-因此 grade、defects、estimated_price 现在保持为空，不把原价当成估价。
+必拍是封面、封底、书脊和前、中、后三处内页，见 experiments/label_protocol.md 第 6 节。
+模型还没训练，价格系数仍是起点，所以 grade、defects、estimated_price 现在保持为空。
 """
 
 from __future__ import annotations

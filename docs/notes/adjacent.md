@@ -22,4 +22,4 @@ DIBCO 系列和 PHIBD 的任务是把字和背景分开。DCNet 从里面切块�
 
 ## 没发论文的系统
 
-https://github.com/hyeminLee-project/used_book_grading 。四张图（封面、封底、书脊、书口）加上 YOLOv8 和 Gemini，输出韩文四级：최상、상、중、매입불가。等级是提示词里的规则，不是一篇有划分、有基线的论文。可以当作「另一个项目最终也许要一个能跑的评级」的例子，不能当作实验结果。
+https://github.com/hyeminLee-project/used_book_grading 。四张图（封面、封底、书脊、书口）加上 YOLOv8 和 Gemini，输出韩文四级：최상、상、중、매입불가。等级是提示词里的规则，不是一篇有划分、有基线的论文，不能当作实验结果。

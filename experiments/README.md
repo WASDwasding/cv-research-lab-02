@@ -2,7 +2,7 @@
 
 每次实验一个文件，写清命令、数据、种子、机器和 `results/` 里的结果路径。
 
-范围已写在 `docs/notes/open-questions.md`。做法还没从 `docs/notes/methods.md` 里选定，选定之前这里不记书籍实验。
+评价界限在 `label_protocol.md`。做法还没从 `docs/notes/methods.md` 里选定，选定之前这里不记书籍训练。
 
 ## 机器
 
